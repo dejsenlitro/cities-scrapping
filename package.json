@@ -1,0 +1,29 @@
+{
+  "name": "scraping",
+  "version": "1.0.0",
+  "description": "asd",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf build && tsc --skipLibCheck && node ./build/index.js",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts"
+  },
+  "author": "Arin Hlaj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "pg-promise": "^9.3.3",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/cheerio": "^0.22.13",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/pg-promise": "^5.4.3",
+    "@types/puppeteer": "^1.20.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1"
+  }
+}
